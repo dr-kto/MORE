@@ -1,0 +1,232 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #141414;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.wrapper{
+    width: 1290px;
+    margin: 0 auto;
+    
+}
+header{
+    position: fixed;
+    padding: 10px;
+    width: 99%;
+    height: 70px;
+    display: flex;
+    color: white;
+    z-index: 1;
+    background-color: #141414;
+}
+header a{
+    margin: 30px 12.5px 25px 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: rgb(59, 144, 255);
+    transition: all 0.3s ease;
+}
+.otyz:hover{
+    color: white;
+}
+
+header input:hover{
+    filter: contrast(50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.headbutton{
+    margin: 18px 0px 25px 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    background-color:rgb(59, 144, 255);
+    height: max-content;
+    width: max-content;
+    padding: 12.5px;
+    border-radius:15px;
+}
+.headbutton:hover{
+    filter:opacity(90%);
+    transition: all 0.3s ease;
+}
+.headjoin{
+    width: max-content;
+    height: max-content;
+    background: rgb(41, 40, 40);
+    border-radius: 15px;
+    border: 0ch;
+    padding: 12.5px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin: 18px 0px 0px 10px;
+    cursor: pointer;
+    text-transform:uppercase ;
+}
+.headjoin:hover{
+    filter: contrast(85%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+.headersearch{
+    width: 130px;
+    height: 42.5px;
+    background: rgb(41, 40, 40);
+    border-radius: 15px;
+    border: 0ch;
+    margin:17px 10px 15px 40px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+main{
+    position:absolute;
+    top: 100px;
+    width: 100%;
+    height: 700px;
+    color: white;
+}
+/*----------------*/
+.world{
+    display: flex;
+    margin: 10px 75px 10px 75px;
+}
+.firstnews11{
+    background-image: url(moreimages/blogbooks1.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+}
+.firstnews11:hover{
+    filter:contrast(95%);
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.news{
+    border-radius:10px;
+    padding: 150px 50px 50px 20px;
+    height: 300px;
+    width: 280px;
+    font-size: 27.5px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+.news a{
+    font-size: 17.5px;
+}
+.news p{
+    font-size: 15px;
+    color: silver;
+}
+/*---------------*/
+.firstblogs12{
+    width: 350px;
+    height: 500px;
+    border-radius:10px;
+    margin: 15px;
+}
+.blogs img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.blogs img:hover{
+    filter: contrast(80%);
+    transform: scale(1.02);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.blogs{
+    font-size: 26px;
+    color: white;
+}
+.blogs h4{
+    font-size: 26px;
+    color: white;
+    margin: 1px 0px -10px 0px;
+    cursor: pointer;
+
+}
+.blogs h4:hover{
+    color: silver;
+    transition: all 0.4s;
+}
+.blogs a{
+    font-size: 16px;
+    color: rgb(59, 144, 255);
+    font: bolder;
+    cursor: pointer;
+}
+.blogs a:hover{
+    color: silver;
+    transition: 0.3s;
+}
+.blogs p{
+    font-size: 17px;
+    color: silver;
+}
+/*-------------------*/
+
+footer{
+    position: absolute;
+    top:1700px;
+    width: 100%;
+    height: 400px;
+}
+.socialsetter{
+    display: flex;
+    margin: 10px 0px 5px 150px;    
+}
+.iconssotset{
+    margin: 99px 50px 0px 350px;
+    width: 45%;
+    height: 300px;
+}
+.socialsets{
+    display: flex;
+    text-align: center;
+    
+}
+.sotset{
+    margin: 5px;
+}
+.sotset:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.nadpis{
+    display: flex;
+    color: white;
+    font-size: 17.5px;
+}
+.nadpis p{
+    margin: 7px;
+}
+.nadpis p:hover{
+    filter: contrast(50%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+footer a{
+    color: white;
+    position: absolute;
+    top:325px;
+    font: optional;
+    font-size: 13px;
+}
