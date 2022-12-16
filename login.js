@@ -1,5 +1,4 @@
-function sendMail()
-{
+function sendMail() {
     var params = {
         username: document.getElementById("username").value,
         email: document.getElementById("email").value,
@@ -10,14 +9,17 @@ function sendMail()
     const templateID = "template_yso3mcx"
 
     emailjs
-    .send(serviceID, templateID, params)
-    .then((res) => {
-        alert("Check your email "+document.getElementById("username").value);
-        document.getElementById("username").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("password").value = "";
-        console.log(res);
-    })
-    .catch((err) => console.log(err));
-    window.location.href='./index.html'
+        .send(serviceID, templateID, params)
+        .then((res) => {
+            document.getElementById("username").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+            console.log(res);
+        })
+        .catch((err) => console.log(err));
+
+
+
+    window.location.href = './index.html'
+    alert("Check your email " + document.getElementById("username").value);
 }

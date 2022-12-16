@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,57 +9,58 @@
     <link rel="stylesheet" href="./login.css">
     <title>Login</title>
 </head>
+
 <body>
-<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-   (function(){
-      emailjs.init("EQLZY-DDzrRst824u");
-   })();
-</script>
-<script src="login.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("EQLZY-DDzrRst824u");
+        })();
+    </script>
+    <script src="login.js"></script>
 
 
-<div class="wrapper">
-    <header style="position: relative;">
-        <a href="./index.html"><div><img src="moreimages/iconmore.png" alt="icon" height="auto" width="140px" style="margin-top: -5px;"></div></a>
-    </header>
-        
-<!-- Form-->
-    <div class="form">
-        <div class="form-toggle"></div>
-        <div class="form-panel two visible active">
-            <div class="form-header">
-                <h1>Register Account</h1>
-            </div>
-            <div class="form-content">
-                <form>
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input id="username" type="text" name="username" required="required"/>
+    <div class="wrapper">
+        <header style="position: relative;">
+            <a href="./index.html">
+                <div><img src="moreimages/iconmore.png" alt="icon" height="auto" width="140px"
+                        style="margin-top: -5px;"></div>
+            </a>
+        </header>
+
+        <!-- Form-->
+        <div class="form">
+            <div class="form-toggle"></div>
+            <div class="form-panel two visible active">
+                <div class="form-header">
+                    <h1>Register Account</h1>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" name="password" required="required"/>
+                <div class="form-content">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input id="username" type="text" name="username" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" name="password" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" name="email" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <button type="button" onclick="sendMail()">Register</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="cpassword">Confirm Password</label>
-                    <input id="cpassword" type="password" name="cpassword" required="required"/>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" name="email" required="required"/>
-                </div>
-                <div class="form-group">
-                    <button type="button" onclick="sendMail()" >Register</button>
-                </div>
-                </form>
             </div>
         </div>
     </div>
-</div>
 
 
 
 </body>
+
 </html>
